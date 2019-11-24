@@ -1,0 +1,26 @@
+List(链表)
+String
+redis常见数据类型操作
+EXPIRE k2 10
+type k1查看类型
+ttl key查看多少秒过期 -1永不过期 -2已经过期
+move key db(index)将key移动到另一个库,当期库的这个key就没了
+flushall清空所有库的所有key
+flushdb清空当前库的所有key
+keys *当前所有key
+dbsize当前数据库key数量
+select index切换到index+1号库(共16个,下标最多15)
+redis索引都是从0开始
+分区容忍性是我们必须需要实现的
+CAP3进2
+Partition tolerance分区容错性
+Availability可用性
+Consistency强一致性
+CAP原理
+图
+列族
+K-V键值
+binary json
+采用聚合模型来处理:
+高并发的操作是不太建议有关联查询,分布式事务支持不了太多的并发
+NoSQL
